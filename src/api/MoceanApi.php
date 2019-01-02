@@ -100,7 +100,7 @@ class MoceanApi
             unset($params['mocean-api-key'], $params['mocean-api-secret']);
             self::appendApiKey($req);
         }
-        self::setAsJson($req);
+        self::setExtra($req);
         $res = $req->setMethod(Request::$METHOD_POST)
             ->setParams(array(
                 'mocean-from' => $params['mocean-from'],
@@ -130,10 +130,11 @@ class MoceanApi
         ));
     }
 
-    private static function setAsJson(Request $req)
+    private static function setExtra(Request $req)
     {
         $req->setParams(array(
-            'mocean-resp-format' => 'JSON'
+            'mocean-resp-format' => 'JSON',
+            'mocean-medium' => 'MAILCHIMP'
         ));
     }
 }
