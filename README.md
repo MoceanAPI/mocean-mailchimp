@@ -2,6 +2,8 @@ Mocean Mailchimp
 ============================
 Mailchimp integration with [Mocean Api](moceanapi.com)
 
+Try for FREE now. 20 trial SMS credits will be given upon [registration](http://dashboard.moceanapi.com/register?fr=mailchimp). Additional SMS credits can be requested and is subject to approval by MoceanAPI.
+
 ## Installation
 
 To install the library, run this command in terminal.
